@@ -13,7 +13,7 @@ const page = async ({ params }: { params: Promise<{ id: string }> }) => {
     },
   });
   
-  if (!snippet) return <h1>"Snippet not Found!</h1>;
+  if (!snippet) return <h1>Snippet not Found!</h1>;
 
  const deleteSnippetAction = deleteSnippet.bind(null, id);
 

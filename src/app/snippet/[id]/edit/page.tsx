@@ -1,5 +1,4 @@
 import SnippetEditor from "@/components/SnippetEditor";
-import { Button } from "@/components/ui/button";
 import { prisma } from "@/lib/prisma";
 import React from "react";
 
@@ -12,7 +11,7 @@ const EditSnippetPage = async ({ params }: { params: Promise<{ id: string }> }) 
     },
   });
 
-  if (!snippet) return <h1>"Snippet not Found!</h1>;
+  if (!snippet) return <h1>&quot;Snippet not Found!&quot;</h1>;
 
   return (
     <div>
